@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu primeiro programa</title>
+    <title>document</title>
     <style>
         body{
             font-family: arial;
@@ -20,9 +20,10 @@
     <p>Já me livrei da maldição...</p>
     
     <script>
-        window.alert('Minha primeira mensagem'); //uma janela de mensagem
-        window.confirm('Está gostando de JS?'); //janela com botão Ok e Cancel
-        window.prompt('Qual é seu nome?'); //uma janela com uma caixa para digitar 
+    
+        var nome = window.prompt('Qual é seu nome?'); //uma janela com uma caixa para digitar 
+        window.alert('É um grande prazer em te conhecer, ' + nome + '!') //concatenação
+
     </script> 
 
 </body>

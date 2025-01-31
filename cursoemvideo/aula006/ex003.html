@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <style>
+        body{
+            font-family: arial;
+            background-color: rgb(71, 0, 112);
+            color: rgb(245, 230, 255);
+            font-size: 20px;
+            text-align: center;
+            text-shadow:black 0.1em 0.1em 0.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá mundo!</h1>
+    <p>What a terrible night to have a curse...</p>
+    
+    <script>
+        var n1 = Number(window.prompt('Digite um número'));
+        var n2 = Number(window.prompt('Digite outro número'));
+        var soma = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`);
+         // + pode servir para adição e também para concatenação
+        //number + number para adição
+        //string + string para concatenação
+            //prompt é transforma sempre em valor string
+        
+      /* Transformações de tipos
+      
+      var n2 = Number.parseFloat(window.prompt('Digite outro número')) numero inteiro
+        var n2 = Number.parseInt(window.prompt('Digite outro número')) numero decimal
+        var n1 = Number(window.prompt('Digite um número')); automatico
+
+        window.alert('A soma dos valores é ' + String(soma)); para transformar em um string
+        */
+    </script>  
+
+</body>
+</html>
