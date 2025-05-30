@@ -21,3 +21,9 @@
   console.log(`Bro is online: ${online}`);
 
   console.log(typeof gpa); //para mostrar o tipo da variável
+
+  /* document.getElementById("p1").textContent = firstName; */
+  document.getElementById("p1").textContent = `Your name is ${firstName}`; //com texto e variável
+
+  document.getElementById("p2").textContent = age;
+  //só variável
