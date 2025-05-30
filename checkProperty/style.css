@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+body{
+    font-family: Helvetica, sans-serif;
+    font-size: 2rem;
+}
+#submit{
+    font-size: 1em;
+}
