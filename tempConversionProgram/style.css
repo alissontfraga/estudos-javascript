@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    background-image: linear-gradient( to bottom, #007A78, rgb(241, 136, 76));
+    min-height: 100vh;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.603);
+}
+
+h1{
+    color: #ffd900;
+    font-size: 3rem;
+}
+form{
+    color: #FFC745;
+    background-color: #003030;
+    text-align: center;
+    max-width: 350px;
+    margin: auto;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 2px 1px 5px 5px rgba(0, 0, 0, 0.281);
+}
+#textBox{
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    border: 2px solid rgba(0, 0, 0, 0.466);
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+label{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+button{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+    background-color: rgb(132, 214, 201);
+    font-size: 1.4em;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover{
+        transition: 0.2s;
+        background-color: rgb(72, 133, 133);
+    }
+}
+#result{
+    font-size: 1.75em;
+    font-weight: bold;
+}
