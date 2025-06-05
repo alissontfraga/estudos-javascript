@@ -9,7 +9,7 @@ function openFridge(...foods){  // aq é o rest, ele junta as variáveis em um a
     console.log(...foods);  //aq é o spread, pra mostrar os elementos "sozinhos"
 }
 function getFood(...foods){
-    return foods;   //vai mostra esse array
+    return foods;   //vai mostrar esse array
 }
 
 const  food1 = "pizza";
