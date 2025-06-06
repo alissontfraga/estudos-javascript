@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.432);
+    color: #fc4e4e;
+}
+
+#container{
+    margin: auto;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #351f72;
+    width: 800px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 5px rgb(243, 63, 63);
+}
+h1{
+    padding: 40px;
+    color: #fc5252;
+}
+
+button{
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #fa1c1c;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover{
+        transition: 0.2s;
+        background-color: #7e1414;
+    }
+    &:active{
+        background-color: #ff8282;
+    }
+}
+
+input{
+    font-size: 2rem;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#diceResult{
+    margin: 25px;
+}
+
+#diceImages img{
+    width: 120px;
+    margin: 5px;
+}
