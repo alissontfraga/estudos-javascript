@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body{
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+#clock-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#clock{
+    font-family: monospace;
+    font-size: 6rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 10px black;
+    text-align: center;
+    color: white;
+    backdrop-filter: blur(5px);
+    background-color: rgba(128, 128, 128, 0.151);
+    width: 100%;
+    border-radius: 15px;
+}
