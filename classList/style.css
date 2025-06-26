@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+}
+#mybutton{
+    font-size: 4rem;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+.enabled{
+    background-color: lightblue;
+    color: white;
+}
+.hover{
+    box-shadow: 0 0 10px grey;
+    font-weight: bold;
+}
+.disabled{
+    background-color: rgb(161, 190, 186);
+    color: rgb(173, 173, 173);
+}
+#myh1{
+    font-size: 5rem;
+}
