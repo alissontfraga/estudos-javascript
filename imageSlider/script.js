@@ -1,42 +1,45 @@
+document.addEventListener("DOMContentLoaded", () => {
+  let currentSlide = 0;
+  const slides = document.querySelectorAll(".slide");
+  let intervalId = null;
 
-const slides = document.querySelectorAll(".slides img");
-let slideIndex = 0;
-let intervalId = null;
-
-
-document.addEventListener("DOMContentLoaded", intializeSlider);
-
-function intializeSlider(){
-
-    if (slides.length > 0){
-        slides[slideIndex].classList.add("displaySlide");
-        intervalId = setInterval(nextSlide, 5000);
-    }
-
-}
-
-function showSlide(index){
-    if (index >= slides.length) {
-        slideIndex = 0;
-    } 
-    else if(index < 0){
-        slideIndex = slide.length - 1;
-    }
-
-    slides.forEach(slide => {
-        slide.classList.remove("displaySlide");
+  const showSlide = (index) => {
+    slides.forEach((slide, i) => {
+      slide.classList.remove("slideActive");
+      if (i === index) slide.classList.add("slideActive");
     });
-    slides[slideIndex].classList.add("displaySlide");
-}
+  };
 
-function prevSlide(){
-    clearInterval(intervalId);
-    slideIndex--;
-    showSlide(slideIndex);
-}
+  const nextSlide = () => {
+    currentSlide = (currentSlide + 1) % slides.length;
+    showSlide(currentSlide);
+  };
 
-function nextSlide(){
+  const prevSlide = () => {
+    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+    showSlide(currentSlide);
+  };
+
+  const startAutoSlide = () => {
+    intervalId = setInterval(() => {
+      nextSlide();
+    }, 3000);
+  };
+
+  const resetAutoSlide = () => {
     clearInterval(intervalId);
-    slideIndex++;
-    showSlide(slideIndex);
-}
+    startAutoSlide();
+  };
+
+  startAutoSlide();
+
+  document.querySelector(".prev").addEventListener("click", () => {
+    prevSlide();
+    resetAutoSlide();
+  });
+
+  document.querySelector(".next").addEventListener("click", () => {
+    nextSlide();
+    resetAutoSlide();
+  });
+});
